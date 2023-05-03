@@ -1,12 +1,12 @@
-import 'dart:math';
-
 class Global {
   static String endpoint = '';
 
   static List allQuotes = [];
   static late String currentQuote;
-  static final random = Random();
-  static var randomQuotes = index[random.nextInt(index.length)];
+  static List historyList = [];
+  static List allData = [];
+  // static final random = Random();
+  // static var randomQuotes = index[random.nextInt(index.length)];
 
   static List index = [
     0,
