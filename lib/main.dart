@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quotesapp/views/screens/history_page.dart';
 import 'package:quotesapp/views/screens/home_page.dart';
 import 'package:quotesapp/views/screens/quotes_page.dart';
 
@@ -31,11 +32,14 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.dark(),
+      theme: ThemeData(
+        useMaterial3: true,
+      ),
       debugShowCheckedModeBanner: false,
       routes: {
         '/': (context) => const HomePage(),
         'quote': (context) => const QuotesPage(),
+        'history': (context) => const HistoryPage(),
       },
     );
   }
